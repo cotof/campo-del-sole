@@ -22,6 +22,18 @@ export function intervalloScala(pixelPerMetro, larghezzaFinestra) {
 
 export function creaScala(elemento, valore) {
   const stimata = elemento.dataset.stimata === 'true';
+  const cifra = document.createElement('span');
+  const unita = document.createElement('span');
+  unita.className = 'unita-scala';
+  unita.textContent = ' m';
+  valore.replaceChildren(cifra, unita);
+  if (stimata) {
+    const circa = document.createElement('span');
+    circa.className = 'circa-scala';
+    circa.textContent = '≈ ';
+    valore.prepend(circa);
+  }
+
   let ultimaLarghezza;
   let ultimiMetri;
   return function aggiorna(pixelPerMetro, larghezzaFinestra) {
@@ -31,9 +43,9 @@ export function creaScala(elemento, valore) {
       ultimaLarghezza = pixel;
     }
     if (metri !== ultimiMetri) {
-      const misura = `${numero.format(metri)} m`;
-      valore.textContent = stimata ? `≈ ${misura}` : misura;
-      elemento.setAttribute('aria-label', `${stimata ? 'Scala indicativa' : 'Scala grafica'} da 0 a ${misura}`);
+      const misura = numero.format(metri);
+      cifra.textContent = misura;
+      elemento.setAttribute('aria-label', `${stimata ? 'Scala indicativa' : 'Scala grafica'} da 0 a ${misura} m`);
       ultimiMetri = metri;
     }
     elemento.hidden = false;

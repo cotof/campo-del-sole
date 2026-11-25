@@ -1,7 +1,7 @@
 import {geometry,photograph,clamp,frame} from "./carrino-modello.js";
 import {contextFor,renderer} from "./carrino-gpu.js";
 import {software} from "./carrino-software.js";
-import {unitaPerMetro,creaScala} from "./scala.js";
+import {unitaPerMetro,creaScala} from "./scala.js?v=2";
 const root=document.getElementById("studio"),status=document.getElementById("attesa");
 const aggiornaScala=creaScala(document.getElementById("scala"),document.getElementById("valore-scala"));
 let unitaModelloPerMetro=0;
