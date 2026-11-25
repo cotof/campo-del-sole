@@ -4,6 +4,10 @@
 
 La licenza MIT riportata qui sotto si applica ai file JavaScript e CSS e al codice HTML che presenta i visualizzatori.
 
+## Caratteri tipografici
+
+STIX Two Text e Source Serif 4 sono distribuiti con licenza SIL Open Font License 1.1. [Licenze e attribuzioni dei caratteri](FONT-LICENSES.txt)
+
 ## Modelli, fotografie e opere rappresentate
 
 La consultazione dei visualizzatori è pubblica. Questa sezione riguarda i modelli nei formati `.bin` e `.glb`, le texture fotografiche `.webp` e i testi delle schede. I diritti sulle sculture di Nicola Carrino e Leo Lionni spettano ai rispettivi titolari.

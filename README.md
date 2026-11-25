@@ -1,4 +1,4 @@
-# Campo del Sole. Modelli digitali di due colonne a Tuoro sul Trasimeno
+# Campo del Sole. Modelli tridimensionali a Tuoro sul Trasimeno
 
 I modelli digitali delle colonne di Nicola Carrino e Leo Lionni accompagnano il percorso di valorizzazione del Campo del Sole. Ogni collegamento nella tabella apre direttamente il modello interattivo dell’opera. [StoryMap «Campo del Sole. Un museo a cielo aperto sulle rive del Trasimeno»](https://storymaps.arcgis.com/stories/89747fddb9b544119fc3863b9c0050b1)
 
@@ -11,7 +11,7 @@ I modelli digitali delle colonne di Nicola Carrino e Leo Lionni accompagnano il 
 
 ## Fotografie e modelli
 
-Fotografie, rilievi e modelli digitali di Franco Cotana.
+Fotografie, rilievi e modelli digitali di Francesco Cotana.
 
 La geometria della colonna di Carrino deriva da una restituzione CAD. Fotografie rettificate documentano le superfici e la scala grafica è calibrata sul modello CAD. Per la colonna di Lionni la geometria deriva dalla fotogrammetria. La sua scala grafica è indicativa e assume un’altezza di 4,4 m.
 
