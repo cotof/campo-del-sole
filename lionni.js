@@ -1,7 +1,7 @@
 import {geometry,photograph,clamp,frame} from "./lionni-modello.js";
 import {contextFor,renderer} from "./lionni-gpu.js";
 import {software} from "./lionni-software.js";
-import {unitaPerMetro,creaScala} from "./scala.js?v=2";
+import {unitaPerMetro,creaScala} from "./scala.js?v=3";
 const root=document.getElementById("studio"),status=document.getElementById("attesa");
 const aggiornaScala=creaScala(document.getElementById("scala"),document.getElementById("valore-scala"));
 let unitaModelloPerMetro=0;

@@ -70,13 +70,12 @@ footer {
   white-space: nowrap;
 }
 #valore-scala { grid-column: 3; position: relative; }
-#valore-scala .circa-scala, #valore-scala .unita-scala {
+#valore-scala .unita-scala {
   position: absolute;
   top: 0;
+  left: 100%;
   white-space: pre;
 }
-#valore-scala .circa-scala { right: 100%; }
-#valore-scala .unita-scala { left: 100%; }
 #scala .barra {
   height: 5px;
   border: 1px solid currentColor;

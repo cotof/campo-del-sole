@@ -27,12 +27,6 @@ export function creaScala(elemento, valore) {
   unita.className = 'unita-scala';
   unita.textContent = ' m';
   valore.replaceChildren(cifra, unita);
-  if (stimata) {
-    const circa = document.createElement('span');
-    circa.className = 'circa-scala';
-    circa.textContent = '≈ ';
-    valore.prepend(circa);
-  }
 
   let ultimaLarghezza;
   let ultimiMetri;
