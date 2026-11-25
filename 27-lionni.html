@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#353637">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Modello digitale interattivo di Tronco fogliante, la colonna di Leo Lionni realizzata nel 1989 al Campo del Sole di Tuoro sul Trasimeno. Scheda 27 della StoryMap.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tronco fogliante · Leo Lionni">
+  <meta property="og:description" content="Modello digitale interattivo di Tronco fogliante, la colonna di Leo Lionni realizzata nel 1989 al Campo del Sole di Tuoro sul Trasimeno. Scheda 27 della StoryMap.">
+  <meta property="og:url" content="https://cotof.github.io/campo-del-sole/27-lionni.html">
+  <link rel="canonical" href="https://cotof.github.io/campo-del-sole/27-lionni.html">
+  <title>Tronco fogliante · Leo Lionni · Campo del Sole</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./schermo.css">
+  <script type="module" src="./lionni.js"></script>
+</head>
+<body>
+<main id="studio" aria-label="Tronco fogliante di Leo Lionni, modello tridimensionale">
+  <canvas id="scena" tabindex="0" aria-label="Modello tridimensionale. Trascina per ruotare. Usa la rotella o due dita per ingrandire. Con la tastiera usa le frecce, più e meno."></canvas>
+  <div id="attesa" role="status">Caricamento del modello…</div>
+  <header>
+    <h1>Tronco fogliante</h1>
+    <p class="autore">Leo Lionni, 1989</p>
+    <p class="luogo">Colonna n. 27 · Campo del Sole<br>Tuoro sul Trasimeno</p>
+  </header>
+  <footer>
+    <p id="guida"><span class="mouse">Trascina per ruotare · Rotella per lo zoom · Maiusc + trascina per spostare</span><span class="touch">Un dito per ruotare · Due dita per zoom e spostamento</span></p>
+    <div class="comandi" role="group" aria-label="Controlli della vista">
+      <button id="meno" type="button" title="Riduci" aria-label="Riduci"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12"/></svg></button>
+      <button id="piu" type="button" title="Ingrandisci" aria-label="Ingrandisci"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M10 4v12"/></svg></button>
+      <i aria-hidden="true"></i>
+      <button id="centra" type="button" title="Ripristina la vista" aria-label="Ripristina la vista"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7a7 7 0 1 1-.1 6M3 2.8v4.7h4.7"/></svg></button>
+    </div>
+    <div id="scala" role="img" data-stimata="true" title="Scala indicativa, basata sull’altezza stimata di 4,4 m" hidden>
+      <div class="misure" aria-hidden="true"><span>0</span><span id="valore-scala"></span></div>
+      <div class="barra" aria-hidden="true"></div>
+    </div>
+  </footer>
+  <noscript>Per ruotare la colonna occorre attivare JavaScript.</noscript>
+</main>
+</body>
+</html>

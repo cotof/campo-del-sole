@@ -4,8 +4,8 @@ I modelli digitali delle colonne di Nicola Carrino e Leo Lionni accompagnano il 
 
 | Scheda della StoryMap | Artista | Titolo | Anno di realizzazione a Tuoro | Modello digitale |
 | --- | --- | --- | --- | --- |
-| 25 | Nicola Carrino | *Costruttivo verticale 1969-88* | 1989 | [Visualizza il 3D di Carrino](https://cotof.github.io/campo-del-sole/carrino.html) |
-| 27 | Leo Lionni | *Tronco fogliante* | 1989 | [Visualizza il 3D di Lionni](https://cotof.github.io/campo-del-sole/lionni.html) |
+| 25 | Nicola Carrino | *Costruttivo verticale 1969-88* | 1989 | [Visualizza il 3D di Carrino](https://cotof.github.io/campo-del-sole/25-carrino.html) |
+| 27 | Leo Lionni | *Tronco fogliante* | 1989 | [Visualizza il 3D di Lionni](https://cotof.github.io/campo-del-sole/27-lionni.html) |
 
 [Indice dei modelli digitali](https://cotof.github.io/campo-del-sole/)
 
