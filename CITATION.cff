@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Questa citazione si riferisce ai modelli digitali delle due colonne di Campo del Sole."
+type: dataset
+title: "Campo del Sole. Modelli digitali di due colonne a Tuoro sul Trasimeno"
+authors:
+  - family-names: "Cotana"
+    given-names: "Franco"
+url: "https://cotof.github.io/campo-del-sole/"
+repository-code: "https://github.com/cotof/campo-del-sole"
