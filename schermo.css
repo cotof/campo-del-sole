@@ -1,0 +1,78 @@
+:root{color-scheme:dark;font-family:Inter,"Segoe UI",Arial,sans-serif;color:#f1f1ef;background:#353637}
+*{box-sizing:border-box}
+html,body,main{margin:0;width:100%;height:100%;overflow:hidden}
+main{position:relative;height:100dvh;isolation:isolate;background:radial-gradient(ellipse at 50% 43%,#454647 0%,#3a3b3d 51%,#303133 100%)}
+canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;cursor:grab;outline:0}
+canvas.grab{cursor:grabbing}canvas:focus-visible:not(.puntatore){outline:2px solid #e9e9e4;outline-offset:-5px}
+header{pointer-events:none;position:absolute;top:max(29px,env(safe-area-inset-top));left:max(34px,env(safe-area-inset-left));max-width:60%}
+h1{font-family:Baskervville,"Iowan Old Style",Georgia,serif;font-weight:400;line-height:1.09;font-size:clamp(1.9rem,3.2vw,3.1rem);letter-spacing:-.038em;margin:0}
+header p{margin:9px 0 0;font-size:clamp(.85rem,1.1vw,1rem);color:#d4d5d3;line-height:1.45}
+header .autore{margin-top:7px;color:#edeeeb}
+header .luogo{margin-top:6px;font-size:.84rem;color:#c2c5c3;line-height:1.4}
+.riprova{padding:6px 12px}
+.dettaglio header{padding:8px 12px 9px;background:rgba(45,46,48,.9);border-radius:6px}
+.dettaglio h1{font-size:1.18rem;letter-spacing:-.015em}
+.dettaglio header .autore{font-size:.8rem;margin-top:3px}
+.dettaglio header .luogo,.dettaglio #guida{visibility:hidden}
+.dettaglio header .luogo{position:absolute}
+footer{pointer-events:none;position:absolute;left:max(34px,env(safe-area-inset-left));right:max(34px,env(safe-area-inset-right));bottom:max(25px,env(safe-area-inset-bottom));display:flex;align-items:center;justify-content:space-between;gap:20px}
+footer p{margin:0;color:#c5c7c7;font-size:.875rem;line-height:1.45}.touch{display:none}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid #f8f7ed;outline-offset:3px}
+button:disabled{cursor:default;opacity:.42}
+svg{display:block;width:20px;height:20px;stroke:currentColor;stroke-width:1.45;stroke-linejoin:round;stroke-linecap:round;fill:none}
+.comandi,.riprova{background:#2d2e30ed;border:1px solid #717273;border-radius:8px}
+.comandi{pointer-events:auto;display:flex;align-items:center;padding:2px}
+.comandi button{border:0;display:grid;place-items:center;width:43px;height:40px;background:transparent;border-radius:5px}
+.comandi i{height:20px;width:1px;display:block;background:#5c5e60;margin:0 2px}
+.comandi button:hover,.riprova:hover{background:#494b4d}
+#attesa,noscript{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:1rem;color:#e6e7e6;text-align:center}
+#attesa:empty{display:none}
+[hidden]{display:none!important}
+@media(pointer:coarse){.mouse{display:none}.touch{display:inline}}
+@media(max-width:650px){
+  header{left:max(16px,env(safe-area-inset-left));top:max(17px,env(safe-area-inset-top));max-width:calc(100% - 32px)}
+  h1{font-size:clamp(1.45rem,6.2vw,2rem)}
+  header p{margin-top:5px;font-size:.83rem;max-width:23em}
+  footer{left:12px;right:12px;bottom:max(10px,env(safe-area-inset-bottom));flex-direction:column-reverse;gap:8px}
+  footer p{font-size:.76rem;text-align:center}
+}
+@media(max-height:500px) and (min-width:651px){
+  header{top:14px}header{left:18px}h1{font-size:1.55rem}header p{margin-top:2px}footer{left:18px;right:18px;bottom:10px}
+}
+@media(max-width:650px){header .autore{margin-top:3px}header .luogo{margin-top:4px;font-size:.75rem}}
+
+footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  grid-template-areas: "guida comandi scala";
+  gap: 16px;
+  align-items: end;
+}
+#guida { grid-area: guida; align-self: center; }
+.comandi { grid-area: comandi; }
+#scala {
+  grid-area: scala;
+  justify-self: end;
+  min-width: 0;
+  color: #f1f1ef;
+  pointer-events: auto;
+  font-size: .825rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+  text-shadow: 0 1px 3px #202123;
+}
+#scala .misure { display: flex; justify-content: space-between; gap: .2em; white-space: nowrap; }
+#scala .barra { height: 5px; border: 1px solid currentColor; border-top: 0; margin-top: 2px; }
+@media (max-width: 650px) {
+  footer {
+    left: max(16px, env(safe-area-inset-left));
+    right: max(16px, env(safe-area-inset-right));
+    bottom: max(12px, env(safe-area-inset-bottom));
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "guida guida" "comandi scala";
+    gap: 6px 12px;
+  }
+  .comandi { justify-self: start; }
+  #guida { text-align: left; }
+}
